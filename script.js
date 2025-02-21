@@ -42,7 +42,7 @@ function playRound() {
                     break;
             }
             break;
-            
+
         case "PAPER" :
             switch (computerChoice.toUpperCase()) {
                 case "ROCK" :
@@ -82,11 +82,9 @@ function playRound() {
 
 function playGames() {
     //playRound(humanSelection, computerSelection);
-    playRound();
-    playRound();
-    playRound();
-    playRound();
-    playRound();
+    for (let i = 0; i < 5; i++) {
+        playRound();
+    }
     if (humanScore > computerScore) {
         console.log("You Win!");
     }
